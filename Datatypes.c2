@@ -1,0 +1,6 @@
+#include<stdio.h>
+//address of char data
+ void main(){
+
+char ch='z'
+ printf("Address 
