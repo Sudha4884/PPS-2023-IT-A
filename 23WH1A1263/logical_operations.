@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+int a=6,b=3;
+printf("%d is greater than %d is %d",a,b,a<b&&b>a);
+printf("%d is greater than %d is %d",a,b,a>b&&b<a);
+printf("%d is less than %d is %d",a,b,a<b&&b>a);
+printf("%d is less than %d is %d",a,b,a>b&&b<a);
+} 
