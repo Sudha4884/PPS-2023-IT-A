@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{
+int lessthan,greaterthan,equalto
+int a=5 b=5
+printf("n\ lessthan);
+printf("n\ greaterthan);
+printf("n\ equalto);
+}
+ 
