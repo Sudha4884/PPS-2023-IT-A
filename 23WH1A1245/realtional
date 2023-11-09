@@ -1,0 +1,11 @@
+#include<stdio.h>
+// relational operators
+
+void main()
+{
+int a=2, b=3;
+ 
+z= (a>=b):
+printf(" a greater than b is false");
+printf(" a greater than b is true");
+}
