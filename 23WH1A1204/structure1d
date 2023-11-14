@@ -1,0 +1,12 @@
+#include<string.h>
+struct student s1
+{
+char name[20];
+int rollno;
+float cgpa;
+};
+strut s1 = {"suhas",20,8.5}
+void main()
+{
+printf("\n %s %d %f", s1.name,s1.rollno,s1.cgpa);
+}
