@@ -1,0 +1,11 @@
+//logical operators
+#include<stdio.h>
+void main()
+{
+int z,y;
+printf("z,y");
+scanf("%d%d",&z,&y);
+printf("\n%d",z&&y);
+printf("\n%d",z||y);
+printf("\n%d",!(z<10));
+}
