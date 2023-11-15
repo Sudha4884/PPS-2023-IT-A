@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main()
+{
+int a= 2;
+float b = a;
+double c = a;
+long double f = a;
+printf("%f",b);
+printf("\n%lf",c);
+printf("\n%lf",f);
+
+}
