@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+int a,b;
+a=10,b=15;
+printf("sum is %d",a+b);
+printf("/n diff is %d",a-b);
+printf("/n product as %d",a*b);
+}
