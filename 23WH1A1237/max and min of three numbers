@@ -1,0 +1,33 @@
+
+#include <stdio.h>
+
+void main() {
+int a;
+int b;
+int c;
+
+//max of three numbers
+printf("give any three numbers");
+scanf("%d",&a);
+scanf("%d",&b);
+scanf("%d",&c);
+if(a>b&&a>c)
+{ printf("a is greatest of the given numbers"); }
+if(b>c&&b>a)
+{printf("b is greatest of all the numbers");}
+else
+
+//min of three numbers
+{printf("c is greatest of the given numbers");
+}
+if(a<b && a<c);
+{printf("a is the min of three numbers");
+}
+if(b<a && b<c);
+{
+printf("b is the min of three numbers");
+}
+else
+{printf("c is the min of three numbers");
+}
+}
