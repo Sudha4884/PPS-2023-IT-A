@@ -1,0 +1,29 @@
+#include <stdio.h>
+void main()
+{  float n1;
+float n2;
+char op;
+    printf("Enter first operand");
+    scanf("%f",&n1);
+    printf("Enter second operand");
+    scanf("%f",&n2);
+    printf("Give the operator");
+    scanf("%s",&op);
+    switch(op)
+    {
+        case '+':
+        printf("%f + %f = %f",n1,n2,n1+n2);
+        break;
+        case '-':
+        printf("%f - %f = %f",n1,n2,n1-n2);
+        break;
+        case '*':
+        printf("%f * %f = %f",n1,n2,n1*n2);
+        break;
+        case '/':
+        printf("%f / %f = %f",n1,n2,n1/n2);
+        break;
+        
+    }
+}
+    
