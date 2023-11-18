@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+void main() {
+int a=4;
+float b=a;
+float c=5;
+int d=c;
+printf("%f",b);
+printf("\n%d",d);
+}
