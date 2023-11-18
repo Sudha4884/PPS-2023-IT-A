@@ -1,0 +1,14 @@
+# include <stdio.h>
+void main()
+{int a=2;
+int b=3;
+// BIT WISE OPERATORS
+printf("%d",a<b||a>b);
+printf("\n%d",a>b && a<b);
+printf("\n%d",a!=b);
+// Post/Pre INCREMENT DECREMENT OPERATORS
+int x=a++;
+printf("\n%d",x);
+int y=++a;
+printf("\n%d",y);
+}
