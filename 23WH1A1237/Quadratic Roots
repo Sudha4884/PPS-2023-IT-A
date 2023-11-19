@@ -1,0 +1,30 @@
+#include <stdio.h>
+void main()
+{float a, b, c;
+    printf("Enter coefficients (a, b, c) of the quadratic equation (ax^2 + bx + c): ");
+    scanf("%f %f %f", &a, &b, &c);
+    if (a == 0) {
+        printf("Invalid quadratic equation (a cannot be zero).\n");
+}
+(float a, float b, float c) {
+    float d, R1, R2;
+    d = b * b - 4 * a * c;
+    if (d > 0) {
+        R1 = (-b + sqrt(d)) / (2 * a);
+        R2 = (-b - sqrt(d)) / (2 * a);
+        printf("Roots are real and different.\n");
+        printf("R1 = %.2f\n", R1);
+        printf("R2 = %.2f\n", R2);
+    } else if (d == 0) {
+        R1 = R2 = -b / (2 * a);
+        printf("Roots are real and equal.\n");
+        printf("R 1 = R2 = %.2f\n", R1);
+    } else {
+      
+        float realPart = -b / (2 * a);
+        float imaginaryPart = sqrt(fabs(d)) / (2 * a);
+        printf("Roots are complex\n");
+        printf("R 1 = %.2f + %.2fi\n", realPart, imaginaryPart);
+        printf("R2 = %.2f - %.2fi\n", realPart, imaginaryPart);
+    }
+}
