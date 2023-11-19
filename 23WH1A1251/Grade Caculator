@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+    float percentile;
+    printf("\nEnter your percentile: ");
+    scanf("%f",&percentile);
+    if (percentile >= 70)
+    {
+        printf("Distinction");
+    }
+    else if (percentile >= 60 && percentile < 70)
+    {
+        printf("First class");
+    }
+    else if (percentile > 40 && percentile < 60)
+    {
+        printf("Second class");
+    }
+    else
+    {
+        printf("Failed");
+    }
+}
