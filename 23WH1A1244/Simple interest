@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+  int s,p,t,r,ptr;
+  p=20;
+  r=30;
+  t=40;
+  s=ptr/100;
+    printf("simple interest is %d",s);
+}
