@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main()
+{
+  int c,p,t,r;
+	c=p*(pow((1+r/100),t));
+	printf("compound interest is %d",c);
+}
