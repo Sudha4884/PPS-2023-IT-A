@@ -4,7 +4,7 @@ void main()
 // simple interest
 
 float p,q,r;
-float si;
+float si,ci;
 
 printf("p=");
 scanf("%f", &p);
@@ -16,6 +16,8 @@ printf("r=");
 scanf("%f", &r);
 
 si=p*q*r;
+ci=p*pow((1+r/100),t);
 
 printf("the simple interest is %f", si);
+printf("the compound interest is %f", ci);
 }
