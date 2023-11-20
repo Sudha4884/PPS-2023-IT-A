@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int m1, m2, m3, p; 
+    printf("Enter the subjects marks: ");
+    scanf("%d%d%d", &m1, &m2, &m3);
+    p = (m1 + m2 + m3) / 3;
+    printf("Percentage = %d\n", per);
+    if(p >= 70)
+    {
+        printf("\n distiction");
+    }
+    else if(p >= 60)
+    {
+        printf("\n firstclass");
+    }
+    else if(p >= 40)
+    {
+        printf("\n secondclass");
+    }
+    else
+    {
+        printf("\n failed");
+    }
+}
