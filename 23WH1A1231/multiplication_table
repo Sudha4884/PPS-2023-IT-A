@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main() 
+{
+    int n,rows;
+    printf("Enter n:");
+    scanf("%d", &n);
+    printf("Enter rows:");
+    scanf("%d", &rows);
+    for(int i = 1;i<=rows; i++) {
+        printf("%d * %d = %d\n", n,i,n*i);
+    }
+  return 0;
+}
