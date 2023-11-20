@@ -1,0 +1,8 @@
+#include <stdio.h>
+void main() {
+    float x,n;
+    printf("give a number:");
+    scanf("%f", &x);
+    n = 1-x/2+(x*x)/4-(x*x*x)/6;
+    printf("Value = %f",n);
+}
