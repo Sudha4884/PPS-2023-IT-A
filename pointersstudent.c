@@ -1,0 +1,14 @@
+#include<stdio.h>
+{
+char *ptr;
+ptr=&name;
+int *cptr;
+cptr=&cgpa;
+int *fptr;
+fptr=&rollno;
+};
+int main()
+ {printf("name,cgpa,rollno") 
+scanf("%d%d%d",ptr,cptr,fptr);
+  printf("%d%d%d",*ptr,*cptr,*fptr);
+}

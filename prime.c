@@ -1,20 +1,10 @@
 #include<stdio.h>
-void main(){
-
-int i, n, cnt;
-printf("Enter the number: ");
-scanf("%d", &n);
-
-cnt=0;
-for(i=1; i<=n; i++){ 
-
-   if ((n%i) == 0){
-    cnt++;}
-  }
-  if (cnt==2){
-  printf("Prime");
-  }
-  else 
-  printf("Not prime");
-
+void main()
+{ int n;
+  printf("n=");
+ scanf("%d",&n);
+if (n%2==1)
+printf(" the number is odd");
+else
+printf("the number is even");
 }

@@ -1,18 +1,11 @@
 #include<stdio.h>
-struct number
-{
- int real;
-int imag;
+struct complex
+{ int real;
+  int imag;
 };
-void main()
-{
-struct number com;
- printf("\n Enter real,imag");
-scanf("%d%d",&com.real,&com.imag);
-if (com.imag>0)
-printf("\n %d+%di",com.real,com.imag);
-else if (com.imag<0)
-printf("\n %d%di",com.real,com.imag);
-else
-printf("\n%d",com.real);
+int main()
+{ struct complex c1;
+printf("\n enter real and imag");
+scanf("%d%d",&c1.real,&c1.imag);
+printf("\n%d%d",c1.real,c1.imag);
 }

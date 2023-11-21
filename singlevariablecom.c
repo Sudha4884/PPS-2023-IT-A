@@ -1,0 +1,28 @@
+#include<stdio.h>
+struct complex
+{ int real;
+  int imag;
+};
+void main()
+{ struct complex com[10];
+int i;
+for(i=0;i<10;i++)
+{
+ printf("\n enter real,enter imag");
+ scanf("%d%d",&com[i].real,&com[i].imag);
+ printf("%d%d",com[i].real,com[i].imag);
+ }
+for(i=0;i<10;i++)
+if(com[i].imag>0)
+{
+printf("\n %d+%d""i",com[i].real,com[i].imag);
+}
+else if(com[i].imag<0)
+{
+printf("\n%d %d""i",com[i].real,com[i].imag);
+}
+else
+{ 
+printf("\n%d",com[i].real);
+}
+}
