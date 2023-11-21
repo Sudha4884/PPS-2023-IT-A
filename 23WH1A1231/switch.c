@@ -7,7 +7,7 @@ int main() {
     printf("Enter a: ");
     scanf("%d", &a);
 
-    printf("Enter operator (+, 1, or %): ");
+    printf("Enter operator (+, -, or %): ");
     scanf(" %c", &operator);
 
     printf("Enter b: ");
