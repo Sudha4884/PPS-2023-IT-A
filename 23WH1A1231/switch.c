@@ -19,7 +19,7 @@ int main() {
         case '+':
             result = a + b;
             break;
-        case '1':
+        case '-':
             result = a - b;
             break;
         case '%':
