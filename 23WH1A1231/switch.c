@@ -1,30 +1,30 @@
 #include <stdio.h>
 
 int main() {
-    int operand1, operand2;
+    int a, b;
     char operator;
 
-    printf("Enter first operand: ");
-    scanf("%d", &operand1);
+    printf("Enter a: ");
+    scanf("%d", &a);
 
     printf("Enter operator (+, 1, or %): ");
     scanf(" %c", &operator);
 
-    printf("Enter second operand: ");
-    scanf("%d", &operand2);
+    printf("Enter b: ");
+    scanf("%d", &b);
 
 
     int result;
     switch (operator) {
         case '+':
-            result = operand1 + operand2;
+            result = a + b;
             break;
         case '1':
-            result = operand1 - operand2;
+            result = a - b;
             break;
         case '%':
-            if (operand2 != 0) {
-                result = operand1 % operand2;
+            if (b != 0) {
+                result = a % b;
             } else {
                 printf("Error: Cannot divide by zero.\n");
                 return 1;
