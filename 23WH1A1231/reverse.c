@@ -1,17 +1,19 @@
 #include <stdio.h>
-int main()
-{
-    int n, sum=0, firstDigit, lastDigit;
-    printf("Enter number = ");
-    scanf("%d", &n);
 
-    lastDigit = n % 10;
+int main() {
 
-    while(n >= 10)
-    {
-        n = n / 10;
-    }
-    firstDigit = n;
-    printf("first digit = %d and last digit = %d\n\n", firstDigit,lastDigit);
-    return 0;
+  int n, reverse = 0, remainder;
+
+  printf("Enter an integer: ");
+  scanf("%d", &n);
+
+  while (n != 0) {
+    remainder = n % 10;
+    reverse = reverse * 10 + remainder;
+    n /= 10;
+  }
+
+  printf("Reversed number = %d", reverse);
+
+  return 0;
 }
