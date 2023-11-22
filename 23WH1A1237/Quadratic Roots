@@ -4,7 +4,7 @@ void main()
     printf("Enter coefficients (a, b, c) of the quadratic equation (ax^2 + bx + c): ");
     scanf("%f %f %f", &a, &b, &c);
     if (a == 0) {
-        printf("Invalid quadratic equation (a cannot be zero).\n");
+        printf("Invalid quadratic equation (a cannot be zero)");
 }
 (float a, float b, float c) {
     float d, R1, R2;
