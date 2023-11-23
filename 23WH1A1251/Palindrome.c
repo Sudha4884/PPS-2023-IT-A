@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+int rem,num,org,rev = 0;
+printf("Enter a number: ");
+scanf("%d",&num);
+org = num;
+for(;num != 0;num /= 10)
+{
+rem = num % 10;
+rev = rev * 10 + rem;
+}
+if (rev == org)
+{
+printf("Number is a palindrome.");
+}
+else
+{
+printf("Number is not a palindrome.");
+}
+}
