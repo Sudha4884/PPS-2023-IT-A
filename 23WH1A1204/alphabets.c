@@ -1,0 +1,26 @@
+#include<stdio.h>
+void Alphabets(char);
+void main()
+{
+ int c,a;
+ printf("enter a character of upper case or lower case");
+ scanf("%c",&c);
+Alphabets(c); 
+
+}
+void Alphabets(char c)
+{
+if(65<=c && c<=90)
+{
+for (int i=65;i<=90;i++)
+{printf("%3c",i);
+
+}
+}else if(97<=c && c<=122)
+{
+for(int i=97;i<=122;i++)
+{
+printf("%3c",i);
+}
+}
+}
