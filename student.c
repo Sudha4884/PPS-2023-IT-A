@@ -2,13 +2,17 @@
 struct student
 {
 char name[20];
-int rollno;
-float cgpa;
-};
-struct student s1;
+int rno;
+char dept[20];
+char g;
+}s1;
 void main()
 {
-printf("\n Enter name, rollno, cgpa");
-scanf("%s%d%f",s1.name, &s1.rollno, &s1.cgpa);
-printf("\n%s%d%f",s1.name, s1.rollno, s1.cgpa);
+s1.name="saieshwari";
+s1.g='f';
+s1.rno=77;
+s1.dept="INFORMATION_TECHNOLOGY";
+printf("NAME\tGENDER\tROLL NO\tDEPARTMENT\n");
+printf("%s\t%c\t%d\t%c\t",s1.name,s1.g,s1.rno,s1.dept);
 }
+ 
