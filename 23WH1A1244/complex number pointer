@@ -10,3 +10,4 @@ cptr=&c1;
 printf("Enter values of real and img: ");
 scanf("%d %d",&cptr->real,&cptr->img);
 printf("%d+(%d)i",cptr->real,cptr->img);
+}
