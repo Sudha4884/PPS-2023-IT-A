@@ -1,3 +1,4 @@
+//Its an error code, is printing values after the range.
 #include<stdio.h>
 int twinPrimes(int num)
 {
