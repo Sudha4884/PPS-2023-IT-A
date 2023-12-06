@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+    float P,T,R,SI,CI;
+    printf("Enter P,T,R values: ");
+    scanf("%f %f %f",&P,&T,&R);
+    SI = P*T*R/100;
+    CI=P*pow((1+R/100),T);
+    printf("\nSI = %f",SI);
+    printf("\nCI = %f",CI);
+}
