@@ -27,7 +27,7 @@ void sumArray(int x[],int no)
 }
 void searchArray(int x[],int no)
 {
-	int i,k;
+	int i,k,count=0;
 	printf("\nEnter k: ");
 	scanf("%d",&k);
 	for(i=0;i<no;i++)
@@ -40,10 +40,37 @@ void searchArray(int x[],int no)
 	if (count>0)
 	{
 		printf("%d is present",k);
-	else
+	}
+	else 
 	{
 		printf("%d is not present",k);
-	}:
+	}
+}
+void maxArray(int x[],int no)
+{
+	int i;
+	int max=x[0];
+	for(i=0;i<no;i++)
+	{
+		if (max<x[i])
+		{
+			max = x[i];
+		}
+	}
+        printf("\n%d is the maximum",max);
+}
+void minArray(int x[], int no)
+{
+        int i;
+        int min=x[0];
+        for(i=0;i<no;i++)
+        {
+                if (x[i]<min)
+                {
+                        min = x[i];
+                }
+        }
+        printf("\n%d is the minimum",min);
 }
 void main()
 {
@@ -54,4 +81,10 @@ void main()
 	printArray(A,n);
 	sumArray(A,n);
 	searchArray(A,n);
+	maxArray(A,n);
+	minArray(A,n);
+	duplicateArray(A,n);
 }
+
+
+
