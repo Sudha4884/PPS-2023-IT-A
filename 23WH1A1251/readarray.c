@@ -34,15 +34,16 @@ void searchArray(int x[],int no)
 	{
 		if (k == x[i])
 		{
-			printf("%d is present at %d index",k,i);
-			break;
-		}
-		else
-		{
-			printf("%d is not present",k);
-			break;
+			count++;
 		}
 	}
+	if (count>0)
+	{
+		printf("%d is present",k);
+	else
+	{
+		printf("%d is not present",k);
+	}:
 }
 void main()
 {
