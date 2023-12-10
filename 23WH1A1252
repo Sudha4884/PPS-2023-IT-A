@@ -1,1 +1,17 @@
+#include <stdio.h>
 
+int main() {
+    int n,t,t1,t2,i;
+    t1=0,t2=1;
+    t=t1+t2;
+    printf("Enter the number of terms:");
+    scanf("%d",&n);
+    printf("The fibanocci series :%d,%d,",t1,t2);
+    for(i=3;i<=n;i++)
+    printf("%d,\n",t);
+    t1=t2;
+    t2=t;
+    t=t1+t2;
+
+    return 0;
+}
