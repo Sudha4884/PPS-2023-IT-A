@@ -1,53 +1,51 @@
 #include<stdio.h>
-int  ReadArray(int []);
-void PrintArray(int [],int);
-void SelectionSort(int [],int);
+void readArray(int[],int n);
+void printArray(int[],int n);
+void selectionSort(int[],int n);
+void swap(int*,int*);
 void main()
 {
-int A[10],n;
-n=ReadArray(A);
-PrintArray(A,n);
-SelectionSort(A,n);
-PrintArray(A,n);
-}
-int ReadArray(int A[])
-{
-int n,i;
-printf("Enter N");
+int A[10],n,i;
+printf("\n Enter a number");
 scanf("%d",&n);
-printf("ENTER %d ELEMENTS",n);
+printf("\n Enter%d elemets",n);
+readArray(A,n);
+printArray(A,n);
+selectionSort(A,n);
+printArray(A,n);
+}
+void readArray(int A[],int n)
+{
+int i;
 for(i=0;i<n;i++)
 scanf("%d",&A[i]);
-return n;
 }
-
-
-void PrintArray(int A[],int n)
+void printArray(int A[],int n)
 {
 int i;
 puts("\n");
 for(i=0;i<n;i++)
-{
-printf("%d",A[i]);
+printf("%d   ",A[i]);
 }
-}
-
-
-void SelectionSort(int A[],int n)
+void swap(int*a,int*b)
 {
-int min;
-int temp;
-for(int i=0;i<n;i++)
+int t;
+t=*a;
+*a=*b;
+*b=t;
+}
+void selectionSort(int A[],int n)
+{
+int i,j,min;
+for(i=0;i<n;i++)
 {
 min=i;
-for(int j=i+1;j<n;j++)
-if(A[j]<A[min])
+for(j=i+1;j<n;j++)
+{
+if(A[min]>A[j])
 min=j;
-temp=A[i];
-A[i]=A[min];
-A[min]=temp;
 }
-return;
+if(min!=i)
+swap(&A[i],&A[min]);
 }
-
-
+}
