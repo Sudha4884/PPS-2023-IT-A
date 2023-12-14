@@ -1,50 +1,30 @@
 #include<stdio.h>
-void readarray(int[], int);
-void printarray(int[], int);
-void searchelement(int[], int);
-void sumofarray(int[],int);
-int main()
+struct complex
 {
-int A[10],i,n;
-printf("enter n =");
-scanf("%d",&n);
-readarray(A,n);
-printf("\n entered %d elements are",n); 
-printarray(A,n);
-searchelement(A,n);
-sumofarray(A,n);
-}
-void readarray(int x[],int noe)
+int a,b;
+};
+void main()
 {
 int i;
-for(i=0;i<noe;i++)
-scanf("%d",&x[i]);
+struct complex com[5];
+for(i=0;i<5;i++)
+{
+printf("enter real and imaginary parts ");
+scanf("%d %d",&com[i].a,&com[i].b);
 }
-void printarray(int x[],int noe )
+for(i=0;i<5;i++)
 {
-int i;
-for(i=0;i<noe;i++)
-printf("%d",x[i]);
+if(com[i].b>0)
+{
+printf("\n %d+%di",com[i].a,com[i].b);
 }
-void searchelement(int x[],int noe)
+else if(com[i].b<0)
 {
-int i,k;
-for(i=0;i<noe;i++)
-{ 
-if (k==x[i])
-{
- printf(" \n %d element is present",k);
+printf("\n %d %di",com[i].a,com[i].b);
 }
 else
 {
- printf("\n %d element is not present",k);
+printf("\n %d",com[i].a);
 }
 }
 }
-void sumofarray(int x[],int noe)
-{ int i,sum=0;
-for(i=0;i<noe;i++)
-sum =sum +x[i] ;
-printf("\n sum is %d",sum);
-}
-
