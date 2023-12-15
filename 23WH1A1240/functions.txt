@@ -1,0 +1,53 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+/*#include<stdio.h>
+int sum(int , int);
+void main()
+{
+    int (*ptr)(int, int)=sum;
+    int a,b,s=0;
+    printf("enter the values of a, b\n");
+    scanf("%d %d",&a,&b);
+    s=ptr(a,b);
+    printf("sum=%d",s);
+}
+int sum(int a, int b)
+{
+    return a+b;
+}*/
+/*#include<stdio.h>
+int *returnpoint(int[]);
+int main()
+{
+    int *p;
+    int a[]={1,2,3,4,5};
+    p=returnpoint(a);
+    for(int i=0;i<5;i++)
+    {
+         printf("%d ",p[i]);
+    }
+  //  printf("%d",*p);
+}
+
+int *returnpoint(int a[])
+{
+    return a;
+}*/
+#include<stdio.h>
+char *returnstring();
+void main()
+{
+    char str1,*p;
+    p=returnstring();
+    printf("%s",p);
+}
+char *returnstring()
+{
+    return "sai eshwari";
+}
+
