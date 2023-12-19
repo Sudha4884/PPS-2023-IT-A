@@ -1,0 +1,20 @@
+#include<stdio.h>
+int naturalNumbers(int ll,int ul)
+{
+    if (ll > ul )
+    {
+        return;
+    }
+    else 
+    {
+        printf("%d ",ll);
+    }
+    naturalNumbers(ll+1,ul);
+}
+void main()
+{
+    int n;
+    printf("Enter a value for n: ");
+    scanf("%d",&n);
+    naturalNumbers(1,n);
+}
