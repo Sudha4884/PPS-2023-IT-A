@@ -1,44 +1,53 @@
-#include <stdio.h>
-void readarray(int [],int);
-void printarray(int[],int);
-void bubblesort(int [], int);
-void main() {
-int i,j, A[20],n;
-printf("enter n");
-scanf("%d", &n);
-printf("enter %d numbers", n);
-readarray(A,n);
-printarray(A,n);
-bubblesort(A,n);
-printarray(A,n);
+#include<stdio.h>
+void BubbleSort(int [],int n);
+void Swap(int *,int *);
+void readArray(int [],int );
+void main()
+{
+   int n;int A[100];
+   printf("enter number of elements : ");
+   scanf("%d",&n);
+   printf("enter %d elements",n);
+   readArray(A,n);
+   BubbleSort(A,n);
+
 }
-void bubblesort(int A[],int n)
+
+
+void readArray(int B[],int num)
+   {
+    for(int i =0;i<num;i++)
+     {
+       scanf("%d",&B[i]);
+      
+     }
+  }
+
+
+void BubbleSort(int A[],int no)
 {
-for(int i = 1; i<=n-1; i++)
-{
-for(int j = 0; j < n-i; j++)
-{
-if (A[j] > A[j+1])
-swap(&A[j], &A[j+1]);
-} 
+    for(int i =0;i<no-1;i++)
+      {
+    
+        for(int j = 0;j<no-i-1;j++)
+          {
+            if(A[j]>A[j+1])
+             {
+                 swap(&A[j],&A[j+1]);
+             }  
+          }
+ }     
+   for(int i =0;i<no;i++)
+      {
+        printf("\n %4d",A[i]);
+      }
+
 }
-}
-void swap(int *x, int*y)
+void swap(int *x,int *y)
 {
-int t = *x;
+int t =0;
+t = *x;
 *x = *y;
 *y = t;
-}
-void readarray(int A[],int n)
-{
-int i;
-for(i=0;i<n;i++)
-scanf("%d",&A[i]);
-}
 
-void printarray(int A[], int n) {
-for (int i = 0; i < n; i++)
-printf("%d ", A[i]);
-printf("\n");
 }
-
