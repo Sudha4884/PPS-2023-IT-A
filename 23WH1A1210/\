@@ -1,0 +1,30 @@
+#include<stdio.h>
+void read_array(int*[], int);
+void print_array(int*[], int);
+void sort();
+void main(){
+int x[10], num;
+
+printf("Enter no. of elements");
+scanf("%d", &num);
+
+read_array(x[10],num);
+print_array(x[10], num);
+
+}
+
+void read_array(int A[], int n){
+    int i;
+    for(i=0; i<n; i++){
+        scanf("%d", &A[i]);
+    }
+}
+
+void print_array(int B[], int b){
+    int i;
+    for(i=0; i<b; i++){
+        printf("%d", B[i]);
+    }
+} 
+
+
