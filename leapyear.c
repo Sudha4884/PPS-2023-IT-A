@@ -1,20 +1,18 @@
 #include<stdio.h>
-int  checkLeapYear(int);
-int  main()
+int LeapYear(int);
+int main()
 {
-int y,res;
-res = checkLeapYear(2001);
-if(res == 1)
-printf("LEAP YEAR");
-else
-printf("NOT LEAP YEAR");
+int y;
+checkLeapYear(1980);
+printf("enter a number");
+scanf("%d",&y);
 checkLeapYear(y);
 }
 int checkLeapYear(int year)
 {
-if((year % 400 == 0)||((year % 4 == 0)&&(year % 100!=0)))
- return 1;
+if((year%400==0)||(year%4==0)&&(year%100!=0))
+printf("\nLEAP YEAR");
 else
- return 0;
-}                                                                             
-
+printf("\nNOT A LEAP YEAR");
+return 1;
+}
