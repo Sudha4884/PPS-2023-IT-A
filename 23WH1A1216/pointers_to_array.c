@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{ int a[100],*ptr,n,i;
+ ptr = &a[0];
+printf("\n enter n");
+scanf("%d",ptr++);
+for(i=0;1<n;i++)
+scanf("%d",ptr++);
+ptr=a;
+for(i=0;i<n;i++)
+printf("%d",*ptr++);
+}
+
