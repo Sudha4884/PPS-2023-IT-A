@@ -1,55 +1,32 @@
 #include<stdio.h>
-int printarray(int a[], int n);
-int linearsearch(int a[],int n);
-int readarray(int a[], int n);
 void main()
 {
-int a[10],n,res1,res2,res;
-int i;
-printf("\n");
-res1=readarray(a,n);
-res2= printarray(a,n);
-res = linearsearch(a,n);
-if (res==-1)
+int A[10],i,n,k;
+printf("enter n : ");
+scanf("%d",&n);
+printf("\n enter %d elements : ",n);
+for(i=0;i<n;i++)
 {
-printf("\n search is successfull");
+scanf("%d",&A[i]);
 }
+for(i=0;i<n;i++)
+{
+printf("%d ",A[i]);
+}
+printf("enter k value :  ");
+scanf("%d",&k);
+printf("%d",linear(A,n,k));
+}
+
+int linear (int A[], int n, int k)
+{
+if(n==0)
+	return -1;
 else
 {
-printf("\n search is not successfull");
-}
-}
-int readarray(int a[], int n)
-{
-int i;
-printf("\n enter size of array ");
-scanf("%d", &n);
-printf("\n %d", n);
-for (i=0; i<=n; i++)
-{
-scanf("%d", &a[i]);
-}
-return n;
-}
-int printarray(int a[], int n)
-{
-int i;
-scanf("%d", &n);
-for ( i=0; i<n; i++)
-{
-printf("\n %d", a[i]);
-}
-return n;
-int linearsearch(int a[], int n)
-{
-int k,i;
-printf("\n enter value of k: ");
-scanf("%d", &k);
-for(i=0; i<n; i++)
-{
-if (a[i]==k)
-return i;
-}
-return -1;
+if (k == A[n-1])
+	return n-1;
+else
+	return linear(A,n-1,k);
 }
 }
