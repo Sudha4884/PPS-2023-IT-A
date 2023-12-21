@@ -1,37 +1,57 @@
-#include<stdio.h>
-int=binarySearch(int[],int n)
-res=binarySearch(A,n);
-if(res==-1)
+include<stdio.h>
+int ReadArray(int []);
+void PrintArray(int [],int );
+int BinarySearch(int [], int );
+int main()
 {
-  printf("search is successful");
+int A[10],n,res,i;
+n=ReadArray(A);
+PrintArray(A,n);
+res = BinarySearch(A,n);
+if (res == -1)
+{
+printf("\n element isnt present in list ");
 }
 else
 {
- printf("search is unsuccessful");
+printf("\n element is present in list at %d",res);
 }
-int binarySearch(int A[],int n)
-{
- low=0;high=n-1;count=0;
- while(low<=high)
- {
-  mid=(low+high)/2;
-  count++;
-  if(k==A[mid])
-    printf("count=%d",count);
-   return mid;
-  else if(k<A[mid])
-    high=mid-1;
-  else
-    low=mid+1;
- }
-  printf("\n count=%d",count);
-  return -1;
+return 1;
 }
-void main()
-void binarysearch(int A[],int n)
+int ReadArray(int A[])
 {
- int k,n;
-  printf("enter k and n values: ");
-  scanf("%d %d",&k,&n);
+int n,i;
+printf("enter n:");
+scanf("%d",&n);
+printf(" enter %d elements ",n);
+for(i=0;i<n;i++)
+scanf("%d",&A[i]);
+return n;
+}
+
+void PrintArray(int A[],int n)
+{
+int i;
+puts("\n");
+for(i=0;i<n;i++)
+printf("%d ",A[i]);
+}
+
+int BinarySearch(int A[], int n)
+{
+int low=0,mid,high=n-1,k;
+printf("enter k :");
+scanf("%d",&k);
+while(low<=high)
+{
+mid = (low+high)/2;
+if(A[mid] == k)
+return mid;
+else if (A[mid] < k )
+low = mid + 1;
+else
+high = mid - 1;
+}
+return -1;
 }
 
