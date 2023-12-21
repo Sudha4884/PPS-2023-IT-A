@@ -1,18 +1,19 @@
 #include<stdio.h>
-int fibanacci(int n);
+int fibonacci(int);
 int main()
 {
 int n,i;
+printf("Enter the number of fibonacci terms");
 scanf("%d",&n);
 for(i=0;i<n;i++)
-printf("%d",fibanacci(i));
+printf("%d\n ",fibonacci(i));
 }
-int fibanacci (int n)
+int fibonacci(int n)
 {
-if (n==0)
+if(n == 0)
 return 0;
-else if (n==1)
+else if (n == 1)
 return 1;
-else
-return(fibanacci(n-1)+fibanacci(n-2));
+else 
+return (fibonacci(n-1) + fibonacci(n-2));
 }
