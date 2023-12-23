@@ -1,11 +1,8 @@
 #include <stdio.h>
-
 #define MAX_ROWS 10
 #define MAX_COLS 10
-
 int main() {
     int row, col;
-
     // Input the dimensions of the matrices
     printf("Enter the number of rows and columns for the matrices: ");
     scanf("%d %d", &row, &col);
@@ -39,7 +36,7 @@ int main() {
     for (int i = 0; i < row; ++i) {
         for (int j = 0; j < col; ++j) {
             result[i][j] = matrix1[i][j] + matrix2[i][j];
-        }
+    }
     }
 
     // Display the result matrix
@@ -47,7 +44,7 @@ int main() {
     for (int i = 0; i < row; ++i) {
         for (int j = 0; j < col; ++j) {
             printf("%d\t", result[i][j]);
-        }
+    }
         printf("\n");
     }
 
