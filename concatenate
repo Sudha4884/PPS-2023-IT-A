@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char s1[20] = "lagishetty";
+char s2[20] = "pranitha";
+strcat(s1 , s2);
+printf(" after catenation  is %s \n",s1);
+}
