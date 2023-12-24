@@ -1,5 +1,5 @@
 #include <stdio.h>
-// check whether number is even or odd
+// check whether number is positive or negative
 int main() {
     int num;
     printf("enter num:");
