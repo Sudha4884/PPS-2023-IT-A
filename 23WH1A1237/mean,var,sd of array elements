@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void main()
+    {
+
+        float arr[10];
+        int  i, n;
+        float mean, variance, standard_deviation, sum=0, v_sum=0;   
+        printf("Enter the number of elements\n");  
+        scanf("%d", &n);
+        printf("Enter %d elemntsof the array\n",n);
+           for (i = 0; i < n; i++)
+            {
+                scanf("%f", & arr[i]);
+            }
+            for(i=0; i<n; i++)   
+            {
+                  sum = sum + arr[i]; 
+            }
+           mean = sum /(float) n;   
+           for(i=0; i<n; i++)  
+            {
+                  v_sum= v_sum + pow((arr[i] - mean), 2);                  
+            }
+           variance = v_sum / (float) n;      
+           standard_deviation = sqrt(variance);  
+           printf("Mean of all elements  = %.2f\n", mean);
+           printf("The variance of all elements = %.2f\n", variance);
+           printf("Standard deviation SD = %.2f\n", standard_deviation);  
+   }
