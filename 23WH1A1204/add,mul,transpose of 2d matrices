@@ -1,0 +1,98 @@
+#include <stdio.h>
+void readmatrices(int [][100],int[][100],int,int,int,int);
+void addition(int [][100],int[][100], int C[][100],int,int,int,int);
+void multiplication(int [][100],int[][100], int C[][100],int,int,int,int);
+void transpose(int [][100],int[][100],int,int,int,int);
+void main()
+{
+    int r1,c1;
+    int r2,c2;
+    printf("enter no of rows and columns : ");
+    scanf("%d %d %d %d",&r1,&c1,&r2,&c2);
+     int A[100][100], B[100][100], C[100][100];
+
+    readmatrices(A, B, r1, c1, r2, c2);
+    addition(A, B, C, r1, c1, r2, c2);
+    multiplication(A,B,C,r1,c1,r2,c2);
+    transpose(A,B,r1,c1,r2,c2);
+}
+void readmatrices(int A[][100],int B[][100],int r1,int c1, int r2, int c2)
+{
+    printf("enter rows and column elements : \n");
+    for(int i = 0;i<r1;i++)
+    {
+        for(int j = 0;j<c1;j++)
+        {
+            scanf("%d",&A[i][j]);
+        }
+    }
+     for(int i = 0;i<r2;i++)
+    {
+        for(int j = 0;j<c2;j++)
+        {
+            scanf("%d",&B[i][j]);
+        }
+    }
+}
+void addition(int A[][100],int B[][100],int c[][100],int r1,int c1, int r2, int c2)
+{
+   
+    if(r1==r2 && c1 == c2)
+    {
+         printf("Resultant Matrix (Sum of A and B):\n");
+        for (int i = 0; i < r1; i++) {
+            for (int j = 0; j < c1; j++) {
+                c[i][j] = A[i][j] + B[i][j];
+                 printf("%d ", c[i][j]);
+            }
+            printf("\n");
+            }
+        
+    } else {
+        printf("Matrix addition is not possible due to mismatched dimensions.\n");
+    }
+}
+void multiplication(int A[][100],int B[][100], int C[][100],int r1,int c1,int r2,int c2)
+{
+    if (c1 == r2) {
+        printf("Resultant Matrix (Multiplication of A and B):\n");
+        for (int i = 0; i < r1; i++) {
+            for (int j = 0; j < c2; j++) {
+                C[i][j] = 0;
+                for (int k = 0; k < c1; k++) {
+                    C[i][j] += A[i][k] * B[k][j];
+                }
+                printf("%d ", C[i][j]);
+            }
+            printf("\n");
+        }
+    } else {
+        printf("Matrix multiplication is not possible due to mismatched dimensions.\n");
+    }
+}
+void transpose(int A[][100],int B[][100],int r1,int c1,int r2,int c2)
+{
+    int D[100][100];int E[100][100];
+    printf("Transpose of matrix A:\n");
+    for(int i = 0;i<r1;i++)
+    {
+        for(int j = 0;j<c1;j++)
+        {
+            D[i][j] = A[j][i];
+            
+           printf("%d ",D[i][j]);
+           
+        }printf("\n");
+    }
+     printf("Transpose of matrix A:\n");
+     for(int i = 0;i<r2;i++)
+    {
+        for(int j = 0;j<c2;j++)
+        {
+            E[i][j] = B[j][i];
+            
+            printf("%d ",E[i][j]);
+        }printf("\n");
+    }
+
+}
