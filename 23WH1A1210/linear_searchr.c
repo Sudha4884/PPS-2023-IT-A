@@ -24,7 +24,7 @@ else
 if (k == b[num-1])
 	return n-1;
 else
-	return linear(b,num-1,k);
+	return linearsearch(b,num-1,k);
 }
 }
 }
