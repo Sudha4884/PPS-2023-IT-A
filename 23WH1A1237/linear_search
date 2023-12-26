@@ -1,0 +1,39 @@
+#include <stdio.h>
+ void array(int x[],int n);
+ void linear_search(int x[],int n);
+ void main()
+
+{  int a[10],i,n,k;
+   printf("enter the range");
+   scanf("%d",&n);
+   printf("enter the elemnts of th array");
+   array(a,n);
+   printf("Enter the element to be searched in the array");
+   scanf("%d",&k);
+   linear_search(a,n);
+}
+
+  void array(int x[],int n)
+ {
+         int i;
+         for(i=0;i<n;i++)
+  {     scanf("%d",&x[i]);
+         printf("%d ",x[i]);
+  }
+ }
+ 
+  void linear_search(int x[],int n)
+  {
+      int i,k;
+      for(i = 0;i < n;i++)
+      {
+          if(k == x[i])
+          {
+              printf("Element is present in the array");
+    
+      }
+          else
+         { printf("Element is not present in the array");
+      }
+  }
+  }
