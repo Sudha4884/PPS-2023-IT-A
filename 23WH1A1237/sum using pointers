@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void main() {
+    int a[5],*p,n,i,sum;
+    p = a[5];
+    printf("Enter the size n");
+    scanf("%d",&n);
+    printf("Enter the elements");
+    for(i = 0;i < n;i ++)
+    {
+        scanf("%d",p++);
+        p=a;
+       
+        for(i = 0;i <n ;i++);
+        printf("%d",*p++);
+        sum=sum+ *(p+i);
+        printf("%d",sum);
+    
+    }
+    
+  
+}
