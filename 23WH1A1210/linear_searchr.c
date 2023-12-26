@@ -16,12 +16,18 @@ void main(){
     printf("%d", res);
 }
 int linearsearch(int b[], int num, int k){
-    for(int i =0; i< num; i++){
-        if(k == b[i]){
-            return i;
-        }    }
+{
+if(num==0)
+	return -1;
+else
+{
+if (k == b[num-1])
+	return n-1;
+else
+	return linear(b,num-1,k);
 }
-
+}
+}
 
 void readArray(int X[], int x){
 int i;
