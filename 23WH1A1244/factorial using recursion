@@ -1,0 +1,20 @@
+#include <stdio.h>
+int fact(int n);
+void main()
+{
+    int n,temp;
+    printf("enter a number");
+    scanf("%d",&n);
+    temp=fact(n);
+    printf("%d",temp);
+
+}
+int fact(int n)
+{
+    if(n==0)
+     return 1;
+    else 
+    {
+     return(n*fact(n-1));
+     }
+}
