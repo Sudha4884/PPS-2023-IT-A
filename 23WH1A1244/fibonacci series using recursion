@@ -1,0 +1,22 @@
+#include <stdio.h>
+int fibonacci(int n);
+void main()
+{
+    int n,i,j;
+    printf("enter a number");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    printf("%d",fibonacci(i));
+    for(j=0;j<n;j++)
+    printf("%d",fibonacci(j));
+}
+int fibonacci(int n)
+{
+    if(n==0)
+     return 0;
+    else if(n==1)
+     return 1;
+    else
+     {return (fibonacci(n-1) + fibonacci(n-2));
+     }
+}
