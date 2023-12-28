@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main() {
+int a,b;
+printf("a");
+scanf("\n %d",&a);
+printf("b ");
+scanf("\n %d",&b);
+printf("\n %d",a<b);
+printf("\n %d",a<=b);
+printf("\n %d",a>b);
+printf("\n %d",a>=b);
+printf("\n %d",a<b);
+printf("\n %d",a==b);
+printf("\n %d",a!=b);}
