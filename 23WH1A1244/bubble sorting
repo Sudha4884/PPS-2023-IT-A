@@ -1,0 +1,42 @@
+#include <stdio.h> 
+
+#include <stdio.h>
+ void array(int x[],int n);
+ void bubble_sort(int x[],int n);
+ void main()
+
+{  int a[10],i,n,k;
+   printf("enter the range");
+   scanf("%d",&n);
+   printf("enter the elemnts of th array");
+   array(a,n);
+   printf("Enter the element to be searched in the array");
+   scanf("%d",&k);
+   bubble_sort(a,n);
+}
+
+  void array(int x[],int n)
+ {
+         int i;
+         for(i=0;i<n;i++)
+  {     scanf("%d",&x[i]);
+         printf("%d ",x[i]);
+  }
+ }
+ void swap(int* arr, int i, int j) 
+{ 
+    int temp = arr[i]; 
+    arr[i] = arr[j]; 
+    arr[j] = temp; 
+} 
+  
+
+void bubble_sort(int arr[], int n) 
+{ 
+	int i, j; 
+	for (i = 0; i < n - 1; i++) 
+
+		for (j = 0; j < n - i - 1; j++) 
+			if (arr[j] > arr[j + 1]) 
+				swap(arr, j, j + 1); 
+} 
