@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main()
+{
+    int num1;
+    float num2;
+    printf("Enter an integer: ");
+    scanf("%d", &num1);
+    num2 = num1;
+    printf("Auto conversion from int to float: %f\n", num2);
+    printf("\nEnter a floating-point number: ");
+    scanf("%f", &num2);
+    num1 = (int)num2;
+    printf("Type casting from float to int: %d\n", num1);
+}
