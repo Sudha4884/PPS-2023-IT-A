@@ -1,0 +1,36 @@
+#include<stdio.h>
+void main()
+{
+    int num1, num2;
+    printf("Enter the numbers: ");
+    scanf("%d %d", &num1, &num2);
+    printf("\nArithmetic Operators:\n");
+    printf("%d + %d = %d\n", num1, num2, num1 + num2);
+    printf("%d - %d = %d\n", num1, num2, num1 - num2);
+    printf("%d * %d = %d\n", num1, num2, num1 * num2);
+    printf("%d / %d = %d\n", num1, num2, num1 / num2);
+    printf("%d %% %d = %d\n", num1, num2, num1 % num2); 
+    printf("\nRelational Operators:\n");
+    printf("%d == %d is %d\n", num1, num2, num1 == num2);
+    printf("%d != %d is %d\n", num1, num2, num1 != num2);
+    printf("%d > %d is %d\n", num1, num2, num1 > num2);
+    printf("%d < %d is %d\n", num1, num2, num1 < num2);
+    printf("%d >= %d is %d\n", num1, num2, num1 >= num2);
+    printf("%d <= %d is %d\n", num1, num2, num1 <= num2);
+    printf("\nLogical Operators:\n");
+    printf("%d && %d is %d\n", num1, num2, num1 && num2);
+    printf("%d || %d is %d\n", num1, num2, num1 || num2);
+    printf("!(%d) is %d\n", num1, !num1);
+    printf("!(%d) is %d\n", num2, !num2);
+    printf("\nBitwise Operators:\n");
+    printf("%d & %d is %d\n", num1, num2, num1 & num2);
+    printf("%d | %d is %d\n", num1, num2, num1 | num2);
+    printf("%d ^ %d is %d\n", num1, num2, num1 ^ num2);
+    printf("~%d is %d\n", num1, ~num1);
+    printf("~%d is %d\n", num2, ~num2);
+    printf("\nIncrement and Decrement Operators:\n");
+    printf("++%d is %d\n", num1, ++num1);
+    printf("--%d is %d\n", num1, --num1);
+    printf("%d++ is %d\n", num1, num1++);
+    printf("%d-- is %d\n", num1, num1--);
+}
