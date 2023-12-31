@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+    int integer,rem, base = 1; 
+    long int binary = 0;
+    printf("Enter a integer number between 0 and 255: ");
+    scanf("%d",&integer);
+    while (integer > 0 && integer < 255)
+    {
+        rem = integer % 2;
+        binary = binary + rem * base;
+        integer /= 2;
+        base *= 10;
+    }
+    printf("Binary of %d is %ld",integer,binary);
+}
