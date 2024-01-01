@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+ int i,n;
+ float arr[10],mean,variance,SD,sum=0,var=0;
+ printf("enter n values: ");
+ scanf("%d",&n);
+ printf("enter %d values: ",n);
+  for(i=0;i<n;i++)
+    scanf("%f",&arr[i]);
+  for(i=0;i<n;i++)
+    sum=sum+arr[i];
+  mean=sum/(float)n;
+   for(i=0;i<n;i++)
+    var=var+pow((arr[i]-mean),2);
+    variance=var/(float)n;
+    SD=sqrt(variance);
+    printf("mean=%2f\n",mean);
+    printf("variance=%2f\n",variance);
+    printf("SD=%2f\n",SD);    
+}
