@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+void main() 
+{
+    int x, n;
+    int sum = 0, i;
+    printf("Enter the value of x and n: ");
+    scanf("%d %d", &x, &n);
+    for (i = 0; i <= n; ++i) 
+    {
+        sum += pow(x, i);
+    }
+    printf("Sum of the geometric progression: %d\n", sum);
+}
