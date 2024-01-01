@@ -1,0 +1,39 @@
+#include<stdio.h>
+void main()
+{
+    int x[10],no,i;
+    printf("Enter a value of n: ");
+	scanf("%d",&no);
+	printf("Enter %d number of elements: ",no);
+	for(i=0;i<no;i++)
+	{
+		scanf("%d",&x[i]);
+		printf("%d  ",x[i]);
+	}
+	int max=x[0];
+	for(i=0;i<no;i++)
+	{
+		if (max<x[i])
+		{
+			max = x[i];
+		}
+	}
+        printf("\n%d is the maximum",max);
+    int min=x[0];
+    for(i=0;i<no;i++)
+        {
+            if (x[i]<min)
+            {
+                min = x[i];
+            }
+        }
+    printf("\n%d is the minimum",min);
+    int sum = 0;
+    float avg = 0;
+	for(i=0;i<no;i++)
+	{
+		sum = sum+x[i];
+	}
+	avg = (float)sum / no;
+	printf("\nAverage is %f",avg);
+}
