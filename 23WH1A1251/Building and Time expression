@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+    double acceleration = 9.8, height = 3.0, time;
+    int floor;
+    for (int floor = 1; floor <= 10; ++floor) 
+    {
+        time = sqrt(2.0 * height * floor / acceleration);
+        printf("Time to reach floor %d: %.lf seconds\n", floor, time);
+    }
+}
