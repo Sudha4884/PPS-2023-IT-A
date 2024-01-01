@@ -1,0 +1,21 @@
+int main()
+{
+    int n,i,avg,min,max,a[10],sum;
+    printf("enter size of array: ");
+    scanf("%d",&n);
+    printf("enter %d elements: ");
+    for(i=0;i<n;i++)
+     scanf("%d",&a[i]);
+     min = max = a[0];
+     for(i=0;i<n;i++)
+     sum=sum+a[i];
+      avg=sum/2;
+      for(i=1;i<n;i++)
+      if(min>a[i])
+        min=a[i];
+        if(max<a[i])
+        max=a[i];
+        printf("average=%d\n ",avg);
+        printf("minimum=%d\n",min);
+        printf("maximum=%d\n",max);
+}
