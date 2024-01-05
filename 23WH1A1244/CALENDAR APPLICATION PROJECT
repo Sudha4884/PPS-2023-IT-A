@@ -42,7 +42,7 @@ int determinedaycode(int year)
 
 int leap_year(int year)
 { int FALSE,TRUE;
-	if(year% 4 == FALSE && year%100 != FALSE || year%400 == FALSE)
+	if(year% 4 == 0 && year%100 != 0 || year%400 == 0)
 	{
 		days_in_month[2] = 29;
 		return TRUE;
