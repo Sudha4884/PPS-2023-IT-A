@@ -1,0 +1,34 @@
+#include<stdio.h>
+void linearSearch(int A[],int no, int k, int i)
+{
+    if (i < no)
+    {
+        if (A[i] == k)
+        {
+            printf("%d is in the array at %d index", k, i);
+        }
+        else 
+        {
+            linearSearch(A, no, k, i + 1);
+        }
+    }
+    else 
+    {
+        printf("%d is not in the array");
+    }
+}
+void main()
+{
+    int A[10],n,k,i;
+    printf("Enter a natural number n: ");
+    scanf("%d",&n);
+    printf("Enter elements of the array: ");
+    for (i=0; i<n; i++)
+    {
+        scanf("%d",&A[i]);
+        printf("%d  ",A[i]);
+    }
+    printf("\nEnter a number k: ");
+    scanf("%d",&k);
+    linearSearch(A, n, k, 0);
+}
