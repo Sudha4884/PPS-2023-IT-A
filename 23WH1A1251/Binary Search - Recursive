@@ -1,0 +1,40 @@
+#include<stdio.h>
+void binarySearch(int A[], int no, int k,int low,int high)
+{
+    int mid;
+        if (low <= high)
+        {
+            mid = (low + high) / 2;
+            if (k == A[mid])
+            {
+                printf("%d exists in the array at %d index",k, mid);
+            }
+            else if (k < A[mid])
+            {
+                binarySearch(A, no, k, low, mid - 1);
+            }
+            else
+            {
+                binarySearch(A, no, k, mid + 1, high);
+            }
+        }  
+        else
+        {
+                printf("%d does not exist in the array", k);
+        }
+}
+void main()
+{
+    int A[10], n, k, i;
+    printf("Enter a natural number for n: ");
+    scanf("%d",&n);
+    printf("\nEnter elements of the array: ");
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &A[i]);
+        printf("%d  ",A[i]);
+    }
+    printf("\nEnter the number you want to search for: ");
+    scanf("%d",&k);
+    binarySearch(A, n, k, 0, n - 1);
+}
